@@ -20,14 +20,12 @@ const Main = () => {
 
     return (
         <main>
-            <div>
-                <h2> Lista de Paletas</h2>
-            <div>
-            {iceCream.map((element) =>{
-                return <Card key={element._id} iceCream ={element}/>
-            })}
-            </div>
-            </div>
+            <h2> Sabores de paletas</h2>
+                <div className="container-paletas">
+                     {iceCream.map((element) =>{
+                        return <Card key={element._id} iceCream ={element}/>
+                    })}
+                </div>
         </main>
     );
 };
