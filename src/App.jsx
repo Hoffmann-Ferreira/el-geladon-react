@@ -1,14 +1,16 @@
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>
-    <Footer/>
+      <Toaster />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
