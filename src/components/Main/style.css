@@ -1,5 +1,6 @@
 main .conteudo {
     width: 99%;
+    min-height: 80%;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
