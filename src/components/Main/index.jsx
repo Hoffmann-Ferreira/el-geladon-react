@@ -1,3 +1,4 @@
+import './style.css';
 import Card from "../Card";
 import { useState, useEffect } from "react";
 
@@ -20,12 +21,16 @@ const Main = () => {
 
     return (
         <main>
-            <h2> Sabores de paletas</h2>
+            <div className='conteudo'>
+            <div className="Sub-titulo">
+                <h2> Sabores de paletas</h2>
+            </div>
                 <div className="container-paletas">
                      {iceCream.map((element) =>{
                         return <Card key={element._id} iceCream ={element}/>
                     })}
                 </div>
+            </div>
         </main>
     );
 };

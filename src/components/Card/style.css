@@ -1,0 +1,51 @@
+.card-Paletas{
+    width: 23%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    flex-direction: column;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #FED9B7;
+    box-shadow:  5px 5px 10px #747474,
+             -5px -5px 10px #ffffff;
+
+}
+.card-Paletas > h3 {
+    font-size: 1.3em;
+}
+.card-Paletas > .description{
+    width: 80%;
+    margin: 0%;
+    text-align: justify;
+    margin-left: 5%;
+}
+.card-Paletas > img {
+    width: 40%;
+    margin-left: 40%;
+
+}
+
+.card-Paletas >  .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+.card-Paletas > .buttons > button{
+    width: 30%;
+    height: 30%;
+    font-family: "Rye", cursive;
+    cursor: pointer;
+
+}
+/* Responsividade */
+
+@media (max-width: 912px) {
+    .card-Paletas{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    
+}      
