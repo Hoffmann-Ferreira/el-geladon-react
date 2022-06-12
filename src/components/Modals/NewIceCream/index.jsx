@@ -2,9 +2,10 @@ import "./style.css";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
-const ModalNewIceCream = ({ closeModal }) => {
+
+const ModalNewIceCream = ({ closeModal, getIceCream }) => {
     const [sabor, setSabor] = useState("");
-    const [preco, setPreco] = useState(0);
+    const [preco, setPreco] = useState("");
     const [descricao, setDescricao] = useState("");
     const [foto, setFoto] = useState("");
 
@@ -35,8 +36,8 @@ const ModalNewIceCream = ({ closeModal }) => {
         setDescricao("");
         setFoto("");
         closeModal();
+        getIceCream();
         toast.success("Paleta adicionada com sucesso!!!");
-        
     };
 
   return (

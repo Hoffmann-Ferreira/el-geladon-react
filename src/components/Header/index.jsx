@@ -5,7 +5,7 @@ import {toast} from "react-hot-toast";
 import ModalNewIceCream from "../Modals/NewIceCream";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({getIceCream}) => {
   const [displayModalCreate, setDisplayModalCreate] = useState(false);
 
   const handleDisplayModalCreate = () => {
@@ -24,7 +24,9 @@ const Header = () => {
         <button onClick={handleDisplayModalCreate} className="botao-Adicionar">Adcionar paleta</button>
       </div>
     </header>
-    {displayModalCreate && <ModalNewIceCream closeModal = {handleDisplayModalCreate}/>}
+    {displayModalCreate && <ModalNewIceCream
+    closeModal = {handleDisplayModalCreate}
+    getIceCream = {getIceCream}/>}
   </>
   );
 };

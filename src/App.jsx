@@ -3,13 +3,31 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import {useState, useEffect} from "react";
 
 function App() {
+
+  const [iceCream, setIceCream] = useState([]);
+
+  const getIceCream = async () => {
+    const response = await fetch(`http://localhost:3005/paletas/listar-todas/`);
+
+    const iceCreamList = await response.json();
+
+    console.log("fez requisição");
+    setIceCream(iceCreamList);
+  };
+
+  useEffect(() => {
+    getIceCream();
+  }, []);
+
+
   return (
     <>
       <Toaster />
-      <Header />
-      <Main />
+      <Header getIceCream={getIceCream} />
+      <Main iceCream={iceCream} />
       <Footer />
     </>
   );

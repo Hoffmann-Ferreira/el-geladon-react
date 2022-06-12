@@ -1,23 +1,7 @@
 import "./style.css";
 import Card from "../Card";
-import { useState, useEffect } from "react";
 
-const Main = () => {
-  const [iceCream, setIceCream] = useState([]);
-
-  const getIceCream = async () => {
-    const response = await fetch("http://localhost:3005/paletas/listar-todas/");
-
-    const iceCreamList = await response.json();
-
-    console.log("fez requisição");
-    setIceCream(iceCreamList);
-  };
-
-  useEffect(() => {
-    getIceCream();
-  }, []);
-
+const Main = ({iceCream}) => {
   return (
     <main>
       <div className="conteudo">
