@@ -2,7 +2,7 @@ import "./style.css";
 import Card from "../Card";
 import { useState } from "react";
 
-const Main = ({ iceCream }) => {
+const Main = ({ iceCream, getIceCream }) => {
   const [filterInput, setFilterInput] = useState("");
 
   return (
@@ -22,10 +22,10 @@ const Main = ({ iceCream }) => {
                 .filter((element) =>
                  element.sabor.toLowerCase().includes(filterInput.toLowerCase()))
                 .map((element) => {
-                  return <Card key={element._id} iceCream={element} />;
+                  return <Card getIceCream = {getIceCream} key={element._id} iceCream={element} />;
                 })
             : iceCream.map((element) => {
-                return <Card key={element._id} iceCream={element} />;
+                return <Card getIceCream = {getIceCream}  key={element._id} iceCream={element} />;
               })}
         </div>
       </div>

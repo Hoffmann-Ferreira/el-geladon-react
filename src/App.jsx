@@ -27,7 +27,7 @@ function App() {
     <>
       <Toaster />
       <Header getIceCream={getIceCream} />
-      <Main iceCream={iceCream} />
+      <Main iceCream={iceCream} getIceCream={getIceCream} />
       <Footer />
     </>
   );
