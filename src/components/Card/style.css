@@ -11,7 +11,8 @@
   box-shadow: 5px 5px 10px #747474, -5px -5px 10px #ffffff;
 }
 .card-Paletas > h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin: 0%;
 }
 .card-Paletas > .description {
   width: 80%;
@@ -20,19 +21,24 @@
   margin-left: 5%;
 }
 .card-Paletas > img {
-  width: 40%;
+  width: 30%;
   margin-left: 40%;
+}
+.card-Paletas > p {
+  font-size: 1em;
+
 }
 
 .card-Paletas > .buttons {
   width: 100%;
+  height: 10%;
   display: flex;
   justify-content: center;
   gap: 3%;
 }
 .card-Paletas > .buttons > button {
   width: 30%;
-  height: 30%;
+  height: 100%;
   font-family: "Rye", cursive;
   cursor: pointer;
 }
