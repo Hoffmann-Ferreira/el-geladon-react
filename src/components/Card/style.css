@@ -27,7 +27,6 @@
 }
 .card-Paletas > p {
   font-size: 1em;
-
 }
 
 .card-Paletas > .buttons {
@@ -43,7 +42,7 @@
   height: 80%;
   font-family: "Rye", cursive;
   cursor: pointer;
-  background-color: #FDFCDC;
+  background-color: #fdfcdc;
   border-radius: 10px;
 }
 /* Responsividade */

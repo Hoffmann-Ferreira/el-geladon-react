@@ -27,7 +27,7 @@ main .conteudo {
   gap: 5%;
 }
 
-.conteudo > .busca-paletas{
+.conteudo > .busca-paletas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,11 +35,10 @@ main .conteudo {
   width: 100%;
 }
 
-.conteudo > .busca-paletas input{
+.conteudo > .busca-paletas input {
   border-radius: 10px;
   font-family: "Rye", cursive;
   padding: 8px;
-  
 }
 
 /* Responsividade  */
