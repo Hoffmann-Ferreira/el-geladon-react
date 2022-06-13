@@ -1,14 +1,18 @@
 import "./style.css";
-import { toast } from "react-hot-toast";
 import ModalDeleteIceCream from "../Modals/DeleteIceCream";
+import ModalEditIceCream from "../Modals/EditIceCream";
 import { useState } from "react";
 
 const Card = ({ iceCream, getIceCream }) => {
   const [showRemoveModal, setShowRemoveModal] = useState(false)
+  const [showEditModal, setShowEditModal] = useState(false);
 
   const handleShowRemoveModal = () => {
     setShowRemoveModal(!showRemoveModal)
-  }
+  };
+  const handleShowEditModal = () => {
+    setShowEditModal(!showEditModal)
+  };
   return (
     <>
     <div className="card-Paletas">
@@ -17,7 +21,7 @@ const Card = ({ iceCream, getIceCream }) => {
       <p className="description">{iceCream.descricao}</p>
       <img src={iceCream.foto} alt={`Paleta sabor ${iceCream.sabor}`} />
       <div className="buttons">
-        <button  title="Deseja editar a Paleta?" onClick={() => toast.error("Sessão em desenvolvimento")}>
+        <button  title="Deseja editar a Paleta?" onClick={handleShowEditModal}>
           Editar
         </button>
         <button  title= "Deseja apagar a Paleta?" onClick={handleShowRemoveModal}>
@@ -26,6 +30,7 @@ const Card = ({ iceCream, getIceCream }) => {
       </div>
     </div>
     { showRemoveModal && <ModalDeleteIceCream closeModal ={handleShowRemoveModal} iceCream = {iceCream} getIceCream = {getIceCream}  />}
+    { showEditModal && <ModalEditIceCream closeModal={handleShowEditModal} getIceCream ={getIceCream} iceCream = {iceCream}/>}
     </>
   );
 };
