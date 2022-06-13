@@ -40,41 +40,37 @@ const ModalEditIceCream = ({closeModal, iceCream, getIceCream}) =>{
     return(
         <div className='box-modal'>
             <div className="modal-container">
-            <button onClick={closeModal}>Fechar</button>
         <form>
           <fieldset>
+          <button className="botao-box-fechar" onClick={closeModal}>Fechar</button>
             <p>Preencha o formulário</p>
 
-            <label>Sabor: </label>
-            <input 
+            <input placeholder='Sabor'
               value={sabor}
             onChange={(event) => setSabor(event.target.value)} 
             name = "sabor"
             required/>
 
-            <label>Preço:</label>
-            <input 
+            <input placeholder='Preço'
             value={preco}
             onChange={(event) => setPreco(event.target.value)} 
             type="number" 
             name = "preco"
             required/>
 
-            <label>Descrição: </label>
-            <input 
+            <input placeholder='Descrição'
             value={descricao}
             onChange={(event) => setDescricao(event.target.value)} 
             name = "descricao"
             required />
 
-            <label>Foto: </label>
-            <input 
+            <input placeholder='Foto'
             value={foto} 
             onChange={(event) => setFoto(event.target.value)} 
             name = "foto"
             required/>
 
-            <button onClick={(hedleEditIceCream)}>Atualizar</button>
+            <button className="botao-modals"  onClick={(hedleEditIceCream)}>Atualizar</button>
           </fieldset>
         </form>
 
