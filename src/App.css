@@ -39,6 +39,7 @@
     background-color: #00C4D4;
     border-radius: 10px;
     font-family: "Rye", cursive;
+    cursor: pointer;
 
 }
 
@@ -47,6 +48,7 @@
     border-radius: 10px;
     font-family: "Rye", cursive;
     background-color: #ef476f;
+    cursor: pointer;
 }
 
 

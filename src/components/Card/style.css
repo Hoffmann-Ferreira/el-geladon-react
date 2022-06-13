@@ -36,12 +36,15 @@
   display: flex;
   justify-content: center;
   gap: 3%;
+  margin-top: 5%;
 }
 .card-Paletas > .buttons > button {
   width: 30%;
   height: 80%;
   font-family: "Rye", cursive;
   cursor: pointer;
+  background-color: #FDFCDC;
+  border-radius: 10px;
 }
 /* Responsividade */
 

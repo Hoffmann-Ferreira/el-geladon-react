@@ -24,8 +24,8 @@ const ModalDeleteIceCream = ({closeModal, iceCream, getIceCream }) => {
         <div className='box-modal-delete'>
             <h2>Deseja Excluir a Paleta de {iceCream.sabor}?</h2>
             <div>
-                <button onClick={closeModal}>Não</button>
-                <button onClick={handleDeleteIceCream}>Sim</button>
+                <button className='buton-modal-excluir1' onClick={closeModal}>Não</button>
+                <button className='buton-modal-excluir2' onClick={handleDeleteIceCream}>Sim</button>
             </div>
         </div>
     </div>

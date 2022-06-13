@@ -11,11 +11,13 @@ const Main = ({ iceCream, getIceCream }) => {
         <div className="Sub-titulo">
           <h2> Sabores de paletas</h2>
         </div>
+        <div className="busca-paletas">
         <input
           value={filterInput}
           onChange={(event) => setFilterInput(event.target.value)}
           placeholder="Digite o sabor da paleta"
         />
+        </div>
         <div className="container-paletas">
           {filterInput !== ""
             ? iceCream
