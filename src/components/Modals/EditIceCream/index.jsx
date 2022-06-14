@@ -17,7 +17,7 @@ const ModalEditIceCream = ({ closeModal, iceCream, getIceCream }) => {
     };
 
     const response = await fetch(
-      `http://localhost:3005/paletas/atualizar-paleta/${iceCream._id}`,
+      `https://apielgeladon.herokuapp.com/paletas/atualizar-paleta/${iceCream._id}`,
       {
         method: "PUT",
         headers: {

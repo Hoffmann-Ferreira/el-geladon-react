@@ -16,7 +16,7 @@ const ModalNewIceCream = ({ closeModal, getIceCream }) => {
       foto,
     };
 
-    const response = await fetch("http://localhost:3005/paletas/criar-paleta", {
+    const response = await fetch("https://apielgeladon.herokuapp.com/paletas/criar-paleta", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
